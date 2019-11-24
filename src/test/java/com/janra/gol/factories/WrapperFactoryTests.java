@@ -1,4 +1,3 @@
-
 package com.janra.gol.factories;
 
 import com.janra.gol.wrappers.console.impl.Console;
