@@ -1,6 +1,5 @@
 package com.janra.gol.wrappers.timer.impl;
 
-import com.janra.gol.factories.IWrapperFactory;
 import com.janra.gol.wrappers.timer.ITimer;
 import com.janra.gol.wrappers.timer.ITimerTask;
 

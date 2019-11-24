@@ -1,4 +1,3 @@
-
 import com.janra.gol.wrappers.console.IConsole;
 import com.janra.gol.wrappers.timer.ITimerTask;
 
