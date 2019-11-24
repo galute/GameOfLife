@@ -1,14 +1,32 @@
-import com.janra.gol.wrappers.Console;
+import com.janra.gol.factories.IWrapperFactory;
+import com.janra.gol.factories.WrapperFactory;
+import com.janra.gol.wrappers.console.IConsole;
+import com.janra.gol.wrappers.timer.ITimer;
 
 import javax.swing.*;
 
 public class Main extends JFrame {
     public static void main(String[] args) throws InterruptedException
     {
-        Console console = new Console(20,40);
+        IWrapperFactory factory = WrapperFactory.create();
+        ITimer timer = factory.createTimer();
 
-        console.setText("XXXX  X XX X\nX XX  XX X X\n   XX X X  X");
-        Thread.sleep(5000);
-        console.setText("X  XXX  X XX\nX    XX XX X\n X X XXXXXXX");
+        try
+        {
+            IConsole console = factory.createConsole(20, 40);
+
+
+            timer.start(new TimerExample(console), 1);
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Unexpected exception " + ex.getClass().getTypeName() + " thrown: " + ex.getMessage());
+        }
+        finally
+        {
+            timer.cancel();
+        }
+
     }
 }
+

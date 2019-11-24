@@ -1,4 +1,4 @@
-package com.janra.gol.wrappers;
+package com.janra.gol.wrappers.console.impl;
 
 import javax.swing.*;
 

@@ -8,7 +8,7 @@
  *
  * *****************************************************************************
  */
-package com.janra.gol.wrappers;
+package com.janra.gol.wrappers.console;
 
 public interface IConsole
 {

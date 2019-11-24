@@ -1,6 +1,6 @@
 package com.janra.gol.stubs;
 
-import com.janra.gol.wrappers.IConsole;
+import com.janra.gol.wrappers.console.IConsole;
 
 public class ConsoleStub implements IConsole
 {
