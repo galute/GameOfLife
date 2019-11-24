@@ -7,7 +7,7 @@ public class MainWindow extends JFrame
     public MainWindow(int x, int y)
     {
         super();
-        setSize(600, 600);
+        setSize(x, y);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
