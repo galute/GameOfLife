@@ -49,10 +49,4 @@ public class Console implements IConsole
     {
         _textArea.setText(message);
     }
-
-    public void init()
-    {
-        _frame.pack();
-        _frame.setVisible(true);
-    }
 }
