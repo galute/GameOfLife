@@ -1,6 +1,6 @@
 package com.janra.gol.wrappers.console.impl;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class MainWindow extends JFrame
 {

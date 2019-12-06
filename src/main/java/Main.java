@@ -6,7 +6,7 @@ import com.janra.gol.wrappers.timer.ITimer;
 import javax.swing.*;
 
 public class Main extends JFrame {
-    public static void main(String[] args) throws InterruptedException
+    public static void main(String[] args)
     {
         IWrapperFactory factory = WrapperFactory.create();
         ITimer timer = factory.createTimer();
@@ -24,9 +24,8 @@ public class Main extends JFrame {
         }
         finally
         {
-            timer.cancel();
+            //timer.cancel();
         }
-
     }
 }
 

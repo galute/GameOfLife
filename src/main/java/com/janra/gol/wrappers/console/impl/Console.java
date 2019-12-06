@@ -2,8 +2,9 @@ package com.janra.gol.wrappers.console.impl;
 
 import com.janra.gol.wrappers.console.IConsole;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JTextArea;
+import java.awt.Color;
+import java.awt.Font;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
